@@ -13,28 +13,41 @@
 </head>
 
 <body>
-    <header class="container-sm container-md container-lg container-xl container-xxl">
+    <header class="header">
         <img class="logo" src="./assets/images/IMG_6462.jpeg" alt="logo">
         <nav>
             <a href="../Index.html">Inicio</a>
             <a href="./pages/Academia.html">Academia</a>
             <a href="./pages/Clases.html">Clases</a>
             <a href="./pages/Bazar.html">Bazar</a>
-            <a href="./pages/Contacto.html">Contacto</a>
+            <a href="./pages/Contacto.html">Contacto</a>  
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"> 
+                <!-- <a class="navbar-brand" href="#"></a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+               
+                </div>
+              </nav>
         </nav>
-    </header class="container-sm container-md container-lg container-xl container-xxl">
+       
+    </header>
+
+
     <div class="imagen_banner">
-        <img src="./assets/images/fotos (2).jpg" alt="banner">
+        <img class="col-12" src="./assets/images/fotos (2).jpg" alt="banner">
     </div>
-    <article class="article">
-        <div class="container-md container-lg container-xl container-xxl">
+
+    <article class="article container-fluid">
+        <div>
             <p class="descripcion">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam cum, deserunt fugit dignissimos
                 ratione iure porro exercitationem asperiores assumenda voluptatibus at eius libero alias expedita
                 distinctio. At cum magni enim.
             </p>
         </div>
-        <div class="container-sm container-md container-lg container-xl container-xxl"></div>
+        <div>
             <img src="./assets/images/fotos (1).jpg" alt="Foto 1">
             <img src="./assets/images/fotos (6).jpg" alt="Foto 1">
             <img src="./assets/images/fotos (3).jpg" alt="Foto 1">

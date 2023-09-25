@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="esp">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <img class="logo"src="./assets/images/logo.png" alt="logo">
+    <header class="container-sm container-md container-lg container-xl container-xxl">
+        <img class="logo" src="./assets/images/IMG_6462.jpeg" alt="logo">
         <nav>
             <a href="../Index.html">Inicio</a>
             <a href="./pages/Academia.html">Academia</a>
@@ -19,47 +22,40 @@
             <a href="./pages/Bazar.html">Bazar</a>
             <a href="./pages/Contacto.html">Contacto</a>
         </nav>
-    </header>
-    
-
+    </header class="container-sm container-md container-lg container-xl container-xxl">
     <div class="imagen_banner">
-            <img src="./assets/images/foto2.jpg" alt="banner">
+        <img src="./assets/images/fotos (2).jpg" alt="banner">
     </div>
-
     <article class="article">
-            <div>
-                <p class="descripcion">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam cum, deserunt fugit dignissimos
-                    ratione iure porro exercitationem asperiores assumenda voluptatibus at eius libero alias expedita
-                    distinctio. At cum magni enim.
-                </p>
-            </div>
-            <div>
-                <img src="./assets/images/fotos (1).jpg" alt="Foto 1">
-                <img src="./assets/images/fotos (1).jpg" alt="Foto 1">
-                <img src="./assets/images/fotos (3).jpg" alt="Foto 1">
-            </div>     
+        <div class="container-md container-lg container-xl container-xxl">
+            <p class="descripcion">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam cum, deserunt fugit dignissimos
+                ratione iure porro exercitationem asperiores assumenda voluptatibus at eius libero alias expedita
+                distinctio. At cum magni enim.
+            </p>
+        </div>
+        <div class="container-sm container-md container-lg container-xl container-xxl"></div>
+            <img src="./assets/images/fotos (1).jpg" alt="Foto 1">
+            <img src="./assets/images/fotos (6).jpg" alt="Foto 1">
+            <img src="./assets/images/fotos (3).jpg" alt="Foto 1">
+        </div>
     </article>
 
     <footer class="grid-container">
-        <div>
-            <img class="foto_logo"src="./assets/images/logo.png" alt="logo">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col"><img class="foto_logo" src="./assets/images/IMG_6461.jpeg" alt="logo"></div>
+                <div class="col">Eventos</div>
+                <div class="col">Siguenos en Redes Sociales</div>
+                <div class="col">Contacto</div>
+            </div>
         </div>
-        <div class="grid-item">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, magnam!
-            </p>
-        </div>
-        <div class="grid-item">
-            <p>Clases</p>
-            <p>Bazar</p>
-            <p>Clases</p>
-            <p>Bazar</p>
-        </div>
-        <div class="grid-item">
-            <p>Encuentranos en redes sociales</p>
-        </div>
-    <footer>
 
+        <footer>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>

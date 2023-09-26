@@ -7,6 +7,15 @@ body {
   width: 100%;
 }
 
+:root {
+  --primary-color: #91805b;
+  --secondary-color: #ddb16e;
+  --terciary-color: #f8f7f2;
+  --color-dark: #4b4e49;
+  --color-dark2: #312d2c;
+}
+
+
 /* .grid-container {
   display: grid;
 } */
@@ -36,17 +45,17 @@ header {
 
 }
 
-a {
+.header a {
   text-decoration: none;
-  color: rgb(64, 28, 38);
+  color: var(--color-dark2);
   padding: 15px;
-  border: 1px solid #cda364;
+  border: 1px solid var(--primary-color);
   border-radius: 10px;
 
 }
 
 a:hover {
-  background-color: rgb(122, 225, 200);
+  background-color: var(--secondary-color);
   border: 1px solid #999;
   color: #000;
   box-shadow: 5px 5px 10px #999;
@@ -69,17 +78,28 @@ a:active {
 /* Corresponde a Banner */
 /* fin barra nav */
 
-/* banner */
+/* INICIO banner */
 
+/* .imagen_banner {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  background-color: #cda364;
+
+}
 .imagen_banner {
   width: 100%;
-  /* height: 71vh; */
+  height: auto;
   text-align: right;
   background-color: #cda364;
-}
+
+} */
+
 .imagen_banner img {
   /* height: 71vh; */
 }
+
+
 
 /* FIN BANNER */
 
@@ -93,8 +113,8 @@ article {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
-  background-color: #8f8c8c;
+  /* align-items: stretch; */
+  background-color: none;
 }
 
 .article img {
@@ -105,9 +125,11 @@ article {
 }
 
 p.descripcion {
-  color: aquamarine;
+  color: rgb(0, 2, 1);
   text-decoration: none;
   font-family: sans-serif;
+  margin: 30px;
+  font-size: large;
 }
 
 /* FIN ARTICLE */
@@ -116,22 +138,22 @@ p.descripcion {
 
 footer.grid-container {
   width: auto;
+  background-color: var(--secondary-color);
+  border-top-left-radius: 100px;
+ 
 }
 
-/* footer {
-width: auto;
-height: auto;
-background-color: aquamarine;
-} */
-
 img.foto_logo {
-  width: 200px;
+  width: 150px;
+  width: 150px;
   margin: auto;
 }
 
-div.col {
+/* div.col {
   width: auto;
-}
+  property: vertical-align;
+  class: align;
+} */
 
 /* .grid-container {
 display: grid;  
@@ -141,6 +163,7 @@ grid-template-rows: 2fr 2fr;
 
 /* @include media-breakpoint-up(md) 
 @include row-cols(4); */
+
 
 
 /* CORRESPONDE A ...... */

@@ -73,6 +73,11 @@ a:active {
   border-left: var(--#{$prefix}offcanvas-border-width) solid var(--#{$prefix}offcanvas-border-color);
   transform: translateX(100%); */
 }
+img.img-fluid {
+  border-radius: 30px;
+  border-top-left-radius: 100px;
+}
+
 /* } cuando hace click se activa la propiedad */
 
 /* Corresponde a Banner */
@@ -87,23 +92,12 @@ a:active {
   background-color: #cda364;
 
 }
-.imagen_banner {
-  width: 100%;
-  height: auto;
-  text-align: right;
-  background-color: #cda364;
-
-} */
-
-.imagen_banner img {
-  /* height: 71vh; */
-}
-
 
 
 /* FIN BANNER */
 
 /* SECCION ARTICLE */
+
 /* }Corresponde a seccion Articulo, 3fotos y texto */
 
 article {
@@ -132,7 +126,7 @@ p.descripcion {
   font-size: large;
 }
 
-/* FIN ARTICLE */
+/* FIN SECCION ARTICLE */
 
 /* CORRESPONTE A CONTENIDO DE FOOTER */
 

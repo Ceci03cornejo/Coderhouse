@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+
 body {
   margin: 0px;
   padding: 0px;
@@ -7,12 +11,15 @@ body {
   width: 100%;
 }
 
+
+
 :root {
   --primary-color: #91805b;
   --secondary-color: #ddb16e;
   --terciary-color: #f8f7f2;
   --color-dark: #4b4e49;
   --color-dark2: #312d2c;
+  --text-banner: font-family:'Dancing Script', cursive;
 }
 
 
@@ -75,7 +82,14 @@ a:active {
 }
 img.img-fluid {
   border-radius: 30px;
-  border-top-left-radius: 100px;
+  /* border-top-left-radius: 100px; */
+}
+.h1 {
+  margin: 50px;
+  font-family:'Dancing Script', cursive;
+  font-weight:700;
+
+
 }
 
 /* } cuando hace click se activa la propiedad */
@@ -132,17 +146,21 @@ p.descripcion {
 
 footer.grid-container {
   width: auto;
+  height: auto;
   background-color: var(--secondary-color);
-  border-top-left-radius: 100px;
  
 }
-
-img.foto_logo {
-  width: 150px;
-  width: 150px;
-  margin: auto;
+#caja{
+  width: 100px;
+  height: 150px;
 }
 
+.foto_logo {
+  /* width: 50px; */
+  height: 150px;
+}
+
+/* fin de footer */
 /* div.col {
   width: auto;
   property: vertical-align;
@@ -160,15 +178,56 @@ grid-template-rows: 2fr 2fr;
 
 
 
-/* CORRESPONDE A ...... */
-.div h1 {
-  display: grid;
-  place-items: center;
-  height: 100px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-style: oblique;
-  background-color: rgb(212, 144, 241);
+/* PAGINA EVENTOS */
+
+.h4{ 
+  margin: 30px;
+  font-family:'Dancing Script', cursive;
+  font-weight:700;
 }
+
+
+.galeria {
+  height: calc( 300px + 3em);
+  width: 260px;
+  margin:1em auto;
+  border: 1px solid #555;
+  position: relative;  
+}
+
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.galeria input[type=radio] {
+  position: relative;
+  bottom: calc(-300px - 1.5em);
+  left: .5em;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
+
+
+
+/* fin pagina eventos */
 
 .table {
   display: inline-block;

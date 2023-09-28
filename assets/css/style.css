@@ -58,6 +58,7 @@ header {
   padding: 15px;
   border: 1px solid var(--primary-color);
   border-radius: 10px;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
 
@@ -130,7 +131,9 @@ article {
   height: 350px;
   margin: 30px;
   border-radius: 30px;
+  
 }
+article img:hover {filter: sepia(60%);}
 
 p.descripcion {
   color: rgb(0, 2, 1);
@@ -142,7 +145,7 @@ p.descripcion {
 
 /* FIN SECCION ARTICLE */
 
-/* CORRESPONTE A CONTENIDO DE FOOTER */
+/* INICIO DE FOOTER */
 
 footer.grid-container {
   width: auto;
@@ -160,73 +163,29 @@ footer.grid-container {
   height: 150px;
 }
 
+
 /* fin de footer */
-/* div.col {
-  width: auto;
-  property: vertical-align;
-  class: align;
-} */
-
-/* .grid-container {
-display: grid;  
-grid-template-columns: 2fr 2fr; 
-grid-template-rows: 2fr 2fr; 
-} */
-
-/* @include media-breakpoint-up(md) 
-@include row-cols(4); */
-
 
 
 /* PAGINA EVENTOS */
 
-.h4{ 
+p.h4{ 
+  margin: 60px;
+  font-family:'Dancing Script', cursive;
+  
+}
+
+.actuaciones_vivo {
+  margin-top: 40px;
   margin: 30px;
   font-family:'Dancing Script', cursive;
   font-weight:700;
 }
-
-
-.galeria {
-  height: calc( 300px + 3em);
-  width: 260px;
-  margin:1em auto;
-  border: 1px solid #555;
-  position: relative;  
+#medidasdiv {
+width: 500px;
+/* height: 500px; */
+align-items: left;
 }
-
-.galeria img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 3s;
-}
-
-.galeria input[type=radio] {
-  position: relative;
-  bottom: calc(-300px - 1.5em);
-  left: .5em;
-}
-
-.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
-  opacity: 1;
-}
-
-.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
-  opacity: 1;
-}
-
-.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
-  opacity: 1;
-}
-
-.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
-  opacity: 1;
-}
-
-
-
 /* fin pagina eventos */
 
 .table {

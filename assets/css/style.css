@@ -1,5 +1,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+</style>
 
 
 body {
@@ -10,8 +13,6 @@ body {
 .contenedor_general {
   width: 100%;
 }
-
-
 
 :root {
   --primary-color: #91805b;
@@ -138,7 +139,7 @@ article img:hover {filter: sepia(60%);}
 p.descripcion {
   color: rgb(0, 2, 1);
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: 'Mooli', sans-serif;
   margin: 30px;
   font-size: large;
 }
@@ -150,7 +151,8 @@ p.descripcion {
 footer.grid-container {
   width: auto;
   height: auto;
-  background-color: var(--secondary-color);
+  background-color: var(--terciary-color);
+  
  
 }
 #caja{
@@ -167,13 +169,22 @@ footer.grid-container {
 /* fin de footer */
 
 
-/* PAGINA EVENTOS */
+/* PAGINA 2 - EVENTOS */
 
-p.h4{ 
+
+.titulo_eventos{
   margin: 60px;
   font-family:'Dancing Script', cursive;
-  
+  text-align: center;
 }
+
+.p_moli{
+  font-family: 'Mooli', sans-serif;
+  text-align: justify;
+  margin: 30px;
+  font-size: large;
+}
+
 
 .actuaciones_vivo {
   margin-top: 40px;
@@ -181,12 +192,17 @@ p.h4{
   font-family:'Dancing Script', cursive;
   font-weight:700;
 }
+
 #medidasdiv {
 width: 500px;
 /* height: 500px; */
 align-items: left;
 }
+
 /* fin pagina eventos */
+
+
+/* otras paginas */
 
 .table {
   display: inline-block;

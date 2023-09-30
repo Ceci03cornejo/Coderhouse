@@ -1,210 +1,266 @@
-body{
-    margin: 0px;
-    padding: 0px;
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+
+
+body {
+  margin: 0px;
+  padding: 0px;
 }
-.contenedor_general{
-    width: 100%;
+
+.contenedor_general {
+  width: 100%;
 }
-.grid-container{
-  display: grid;
+
+:root {
+  --primary-color: #91805b;
+  --secondary-color: #ddb16e;
+  --terciary-color: #f8f7f2;
+  --color-dark: #4b4e49;
+  --color-dark2: #312d2c;
+  --text-banner: font-family:'Dancing Script', cursive;
 }
 
 /* CORRESPONDE A INDEX.HTML */
 /* barra de nav */
-header{
+
+header {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(246, 242, 224);
+  /* background-color: hwb(30 98% 1%); */
 }
-.logo{
-  display: flex;
+
+.logo {
   width: 200px;
   height: 200px;
   justify-content: space-around;
 
 }
-a{
+
+.header a {
   text-decoration: none;
-  color: rgb(64, 28, 38);
+  color: var(--color-dark2);
   padding: 15px;
-  border: 1px solid #cda364;
+  border: 1px solid var(--primary-color);
   border-radius: 10px;
+  margin: 5px;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
 
-a:hover{
-  background-color: rgb(122, 225, 200);
+a:hover {
+  background-color: var(--secondary-color);
   border: 1px solid #999;
   color: #000;
   box-shadow: 5px 5px 10px #999;
 }
-  
-  a:active{
+
+a:active {
   box-shadow: none;
   background-color: chocolate;
   color: black;
 }
-  /* } cuando hace click se activa la propiedad */
-  
-  /* Corresponde a Banner */
+.offcanvas-end {
+  top: 0;
+  left: 0;
+  /* width: var(--#{$prefix}offcanvas-width);
+  border-left: var(--#{$prefix}offcanvas-border-width) solid var(--#{$prefix}offcanvas-border-color);
+  transform: translateX(100%); */
+}
+img.img-fluid {
+  border-radius: 30px;
+  /* border-top-left-radius: 100px; */
+}
+.h1 {
+  margin: 50px;
+  font-family:'Dancing Script', cursive;
+  font-weight:700;
+}
 
+/* } cuando hace click se activa la propiedad */
 
-.imagen_banner{
-    width: 100%;
+/* Corresponde a Banner */
+/* fin barra nav */
+
+/* INICIO banner */
+
+/* .imagen_banner {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  background-color: #cda364;
+
+}
+
+/* FIN BANNER */
+
+/* SECCION ARTICLE */
+
+/* }Corresponde a seccion Articulo, 3fotos y texto */
+
+article {
+  padding: 1rem;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: stretch; */
+  background-color: none;
+}
+
+.article img {
+  width: 300px;
+  height: 350px;
+  margin: 30px;
+  border-radius: 30px;
   
 }
-.imagen_banner img{
-    width: 100%;
-    height: auto;
-    padding: 0px;
-    margin-bottom: 50px;
+article img:hover {filter: sepia(60%);}
+
+p.descripcion {
+  color: rgb(0, 2, 1);
+  text-decoration: none;
+ font-family: 'Mooli', sans-serif;
+  margin: 30px;
+  font-size: large;
 }
 
-/* .contenedor3 img {
-    display:inline;
-    width: 200px;
-    height: 200px;
-    margin: 50px;
-} */
-  /* }Corresponde a seccion Articulo, 3fotos y texto */
+/* FIN SECCION ARTICLE */
 
-  article{
-    padding: 1rem;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    background-color:#8f8c8c;
-    
-  }
-  .article img{
-    width: 300px;
-    height: 300px;
-    margin: 30px;
-    border-radius: 30px;
-  }
-  p.descripcion {
-    color:aquamarine;
-    text-decoration: none;
-    font-family: sans-serif;
-  }
+/* INICIO DE FOOTER */
 
-  /* CORRESPONTE A CONTENIDO DE FOOTER */
-footer {
-width: 100%;
-/* height: 300px;
-display: flex;
-align-items: stretch; */
-background-color: aquamarine;
+footer.grid-container {
+  width: auto;
+  height: auto;
+  background-color: var(--terciary-color);
+  
+ 
+}
+#caja{
+  width: 100px;
+  height: 150px;
 }
 
 .foto_logo {
-  width: 150px;
-  margin: 20px;
+  /* width: 50px; */
+  height: 150px;
 }
-/* 
-div.text1 {
+
+
+/* fin de footer */
+
+
+/* PAGINA 2 - EVENTOS */
+
+
+.titulo_eventos{
+  margin: 60px;
+  font-family:'Dancing Script', cursive;
+  text-align: center;
+}
+
+.p_moli{
+  font-family: 'Mooli', sans-serif;
+  text-align: justify;
+  margin: 30px;
+  font-size: large;
+}
+
+
+.actuaciones_vivo {
+  margin-top: 40px;
+  margin: 30px;
+  font-family:'Dancing Script', cursive;
+  font-weight:700;
+}
+
+#medidasdiv {
 width: 500px;
-height: 100%;
-margin: 60px;
-justify-content: space-around;
-}
-text 1{
+/* height: 500px; */
+align-items: left;
 }
 
-div.textos p{
-width: 100%;
-height: 200px
-margin: 10px;
-justify-content: space-around;
+/* fin pagina eventos */
+
+
+/* otras paginas */
+
+.table {
+  display: inline-block;
+  border-collapse: collapse;
+  border-spacing: 3px;
+  table-layout: fixed;
+  text-align: left;
+  margin-left: 30px;
 }
 
-div.rrss p {
-width: 300px;
-height: 100%;
-margin: 30px;
-justify-content: space-around;
-} */
-.grid-container {
-display: grid;  
-grid-template-columns: 2fr 2fr; 
-grid-template-rows: 2fr 2fr; 
+.tr {
+  background-color: rgb(241, 144, 228);
 }
 
-
-
-
-
-/* CORRESPONDE A ...... */
-.div h1{
-    display:grid;
-    place-items:center;
-    height: 100px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style: oblique;
-    background-color: rgb(212, 144, 241);
+th,
+td {
+  border: 2px solid rgb(241, 144, 228);
 }
- .table {
-    display: inline-block;
-    border-collapse: collapse;
-    border-spacing: 3px;
-    table-layout: fixed;
-    text-align:left;
-    margin-left: 30px;
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
 }
-   .tr{
-    background-color: rgb(241, 144, 228);
-   }
-   th, td {
-    border: 2px solid rgb(241, 144, 228);
-   }
-   form {
-    margin: 0 auto;
-    width: 400px;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  form li + li {
-    margin-top: 1em;
-  }
-  
-  label {
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  input, textarea {
-    font: 1em sans-serif;
-    width: 300px;
-    box-sizing: border-box;
-    border: 1px solid #999;
-  }
-  input:focus,
-  textarea:focus {
-    border-color: #000;
-  }
-  textarea {
-    vertical-align: top;
-    height: 5em;
-  }
-  .button {
-    padding-left: 90px;
-  }
-  
-  button {
-    margin-left: 0.5em;
-  }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+form li+li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: 0.5em;
+}
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);

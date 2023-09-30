@@ -1,8 +1,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-  <style>
+  
   @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
-</style>
+
 
 
 body {
@@ -23,24 +23,12 @@ body {
   --text-banner: font-family:'Dancing Script', cursive;
 }
 
-
-/* .grid-container {
-  display: grid;
-} */
-
-/* $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
-); */
 /* CORRESPONDE A INDEX.HTML */
 /* barra de nav */
 
 header {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   /* background-color: hwb(30 98% 1%); */
@@ -59,6 +47,7 @@ header {
   padding: 15px;
   border: 1px solid var(--primary-color);
   border-radius: 10px;
+  margin: 5px;
   font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
@@ -139,7 +128,7 @@ article img:hover {filter: sepia(60%);}
 p.descripcion {
   color: rgb(0, 2, 1);
   text-decoration: none;
-  font-family: 'Mooli', sans-serif;
+ font-family: 'Mooli', sans-serif;
   margin: 30px;
   font-size: large;
 }
@@ -271,3 +260,10 @@ textarea {
 button {
   margin-left: 0.5em;
 }
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);

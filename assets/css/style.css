@@ -54,7 +54,7 @@ header {
 
 a:hover {
   background-color: var(--secondary-color);
-  border: 1px solid #999;
+  /* border: 1px solid #999; */
   color: #000;
   box-shadow: 5px 5px 10px #999;
 }
@@ -208,12 +208,61 @@ td {
   border: 2px solid rgb(241, 144, 228);
 }
 
+
+/* Pagina Contacto */
+
+/* NAV */
+header{
+  margin: 0px;
+  padding: 0px;
+}
+#nav_contacto{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+
+}
+#logo_contacto img{
+  width: 200px;
+  height: 200px;
+}
+#nav_contacto ul{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-items: center;
+}
+#nav_contacto ul li{
+  list-style: none;
+}
+#nav_contacto a{
+  text-decoration: none;
+  color: var(--color-dark2);
+  padding: 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 5px;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/* TITULO contacto */
+.titulo_contacto{
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight:700;
+  line-height: 1.2;
+  margin-bottom: 60px;
+}
+
+/* Formulario */
+
 form {
   margin: 0 auto;
-  width: 400px;
+  width: 500px;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 1em;
+  margin-bottom: 70px;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 ul {
@@ -228,8 +277,8 @@ form li+li {
 
 label {
   display: inline-block;
-  width: 90px;
-  text-align: right;
+  width: 120px;
+  text-align: center;
 }
 
 input,
@@ -254,13 +303,74 @@ textarea {
   padding-left: 90px;
 }
 
-button {
-  margin-left: 0.5em;
+.button button {
+  margin-left: 9.5em;
+  text-decoration: none;
+  color: var(--color-dark2);
+  padding: 5px;
+  width: 70px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: white;
+  cursor: pointer;
 }
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
-);
+.button button:hover{
+  background-color: #ddb16e;
+}
+
+/* Footer Contacto */
+#footer_contacto{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color: var(--terciary-color);
+  justify-items: center;
+}
+.footer_logo img{
+  width: 150px;
+  height: 150px;
+}
+.footer_redes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer_redes p{
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.container_redes{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 30px;
+}
+.container_redes a{
+  margin: 15px;
+  color: black;
+}
+.container_redes a i{
+  font-size: 20px;
+}
+.container_redes a:hover{
+  background-color: #91805b;
+}
+.footer_contactanos{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer_contactanos a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 15px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/* WAVE footer */
+.wave_footer{
+  background-color: var(--terciary-color);
+}

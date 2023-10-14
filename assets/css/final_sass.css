@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 body {
   margin: 0px;
   padding: 0px;
@@ -13,18 +10,16 @@ body {
 }
 
 :root {
-  --primary-color: #91805b;
-  --secondary-color: #ddb16e;
-  --terciary-color: #f8f7f2;
-  --color-dark: #4b4e49;
-  --color-dark2: #312d2c;
-  --text-banner: 'Dancing Script', cursive;
+  --primary-color:#91805b;
+  --secondary-color:#ddb16e;
+  --terciary-color:#f8f7f2;
+  --color-dark:#4b4e49;
+  --color-dark2:#312d2c;
+  --text-banner:"Dancing Script", cursive;
 }
 
 /* CORRESPONDE A INDEX.HTML */
-
 /* barra de nav */
-
 header {
   display: flex;
   flex-wrap: wrap;
@@ -36,7 +31,6 @@ header {
   width: 200px;
   height: 200px;
   justify-content: space-around;
-
 }
 
 .header a {
@@ -55,7 +49,6 @@ a:hover {
   color: #000;
   box-shadow: 5px 5px 10px #999;
 }
-
 a:active {
   box-shadow: none;
   background-color: chocolate;
@@ -65,7 +58,6 @@ a:active {
 .offcanvas-end {
   top: 0;
   left: 0;
-
 }
 
 img.img-fluid {
@@ -73,18 +65,17 @@ img.img-fluid {
 }
 
 .h1 {
-   font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 700;
 }
-#box_h1{
+
+#box_h1 {
   margin: 40px 10px;
 }
+
 /* FIN BANNER */
-
 /* SECCION ARTICLE */
-
 /* }Corresponde a seccion Articulo, 3fotos y texto */
-
 article {
   height: auto;
   width: 100%;
@@ -99,38 +90,32 @@ article {
   height: 350px;
   margin: 30px;
   border-radius: 30px;
-  overflow:hidden;
+  overflow: hidden;
 }
-
 .article p {
   margin: 20px 0px;
 }
 
-
 article img:hover {
   /* filter: sepia(60%); */
-  -webkit-transform:scale(1.1);transform:scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 
 p.descripcion {
   color: rgb(0, 2, 1);
   text-decoration: none;
-  font-family: 'Mooli', sans-serif;
+  font-family: "Mooli", sans-serif;
   margin: 30px;
   font-size: large;
 }
 
 /* FIN SECCION ARTICLE */
-
 /* INICIO DE FOOTER */
-
 footer.grid-container {
   width: auto;
   height: auto;
   background-color: var(--terciary-color);
-
-
 }
 
 #caja {
@@ -145,33 +130,28 @@ footer.grid-container {
 
 /* fin de footer */
 /*  FIN PAGINA INDEX */
-
-
-
 /* PAGINA 2 - EVENTOS */
-
 .w-100 {
   width: 80%;
 }
 
 .titulo_eventos {
   margin: 60px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-align: center;
 }
 
 .p_moli {
-  font-family: 'Mooli', sans-serif;
+  font-family: "Mooli", sans-serif;
   text-align: center;
   margin: 30px;
   font-size: large;
 }
 
-
 .actuaciones_vivo {
   margin-top: 40px;
   margin: 30px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 700;
 }
 
@@ -182,12 +162,9 @@ footer.grid-container {
 }
 
 /* fin pagina eventos */
-
 /* INICIO PAGINA DE CLASES */
-
 .tabla1 {
   text-align: center;
-
 }
 
 .table {
@@ -200,7 +177,7 @@ footer.grid-container {
 
 .tr {
   background-color: var(--secondary-color);
-  font-family: 'Mooli', sans-serif;
+  font-family: "Mooli", sans-serif;
   text-align: justify;
   margin: 30px;
   font-size: medium;
@@ -208,28 +185,26 @@ footer.grid-container {
 }
 
 .th {
-  font-family: 'Mooli', sans-serif;
+  font-family: "Mooli", sans-serif;
 }
 
 td {
   border: 1px solid var(--color-dark);
-  font-family: 'Mooli', sans-serif;
+  font-family: "Mooli", sans-serif;
   text-align: justify;
   margin: 30px;
   font-size: medium;
 }
 
 .p_moli2 {
-  font-family: 'Mooli', sans-serif;
+  font-family: "Mooli", sans-serif;
   text-align: center;
   margin: 30px;
   font-size: medium;
 }
+
 /* Fin pagina clases */
-
-
 /* Inicio Pagina 5 Contacto */
-
 /* NAV */
 header {
   margin: 0px;
@@ -240,7 +215,6 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-
 }
 
 #logo_contacto img {
@@ -253,11 +227,9 @@ header {
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
 }
-
 #nav_contacto ul li {
   list-style: none;
 }
-
 #nav_contacto a {
   text-decoration: none;
   color: var(--color-dark2);
@@ -269,9 +241,8 @@ header {
 }
 
 /*formulario CONTACTO*/
-
 .titulo_contacto {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
@@ -280,7 +251,6 @@ header {
 }
 
 /* Formulario */
-
 form {
   margin: 0 auto;
   display: grid;
@@ -290,8 +260,6 @@ form {
   border-radius: 1em;
   margin-bottom: 70px;
   font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
-
 }
 
 ul {
@@ -300,7 +268,7 @@ ul {
   margin: 0;
 }
 
-form li+li {
+form li + li {
   margin-top: 1em;
 }
 
@@ -310,16 +278,14 @@ label {
   text-align: center;
 }
 
-input,
-textarea {
+input, textarea {
   font: 1em sans-serif;
   width: 300px;
   box-sizing: border-box;
   border: 1px solid #999;
 }
 
-input:focus,
-textarea:focus {
+input:focus {
   border-color: #000;
 }
 
@@ -327,11 +293,13 @@ textarea {
   vertical-align: top;
   height: 5em;
 }
+textarea:focus {
+  border-color: #000;
+}
 
 .button {
   padding-left: 90px;
 }
-
 .button button {
   margin-left: 9.5em;
   text-decoration: none;
@@ -344,20 +312,17 @@ textarea {
   background-color: white;
   cursor: pointer;
 }
-
 .button button:hover {
   background-color: #ddb16e;
 }
 
 /* Footer Contacto */
-
 #footer_contacto {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: var(--terciary-color);
   justify-items: center;
   gap: 1rem;
-
 }
 
 .footer_logo img {
@@ -370,7 +335,6 @@ textarea {
   flex-direction: column;
   justify-content: center;
 }
-
 .footer_redes p {
   font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -381,16 +345,13 @@ textarea {
   justify-content: center;
   height: 30px;
 }
-
 .container_redes a {
   margin: 15px;
   color: black;
 }
-
 .container_redes a i {
   font-size: 20px;
 }
-
 .container_redes a:hover {
   background-color: #91805b;
 }
@@ -401,7 +362,6 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-
 .footer_contactanos a {
   display: block;
   text-decoration: none;
@@ -418,11 +378,7 @@ textarea {
 }
 
 /* FIN PAGINA DE CONTACTO */
-
-
-
 /* INICIO PAGINA BAZAR */
-
 .bazar_contenedor {
   display: flex;
   align-items: center;
@@ -434,17 +390,15 @@ textarea {
 
 .imagen_bazar {
   width: 300px;
-  margin: 10px;
+  margin: 30px;
   border-radius: 10px;
- 
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
-  
   #nav_contacto {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     width: 100%;
     margin-bottom: 40px;
     justify-items: center;
@@ -452,47 +406,31 @@ textarea {
   #nav_contacto ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     gap: 50px 0px;
   }
   /* #nav_contacto ul li {
   } */
-
   form {
     width: 90%;
     height: auto;
     margin: 0 auto;
   }
-  input,
-  textarea {
-  font: 1em sans-serif;
-  width: 160px;
+  input, textarea {
+    font: 1em sans-serif;
+    width: 160px;
   }
-  
   #footer_contacto {
     display: grid;
     grid-template-columns: 1fr;
- 
+  }
+  #video {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
-#video{
-  text-align: center;
-  margin: 0 auto;
-}
-}
-
 /* Tablet Styles */
-@media only screen and (min-width: 501px) and (max-width: 960px) {
-  body {
-    background-color: #F5CF8E;
-    /* Yellow */
-  }
-}
-
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
-  body {
-    background-color: #B2D6FF;
-    /* Blue */
-  }
-}
+
+/*# sourceMappingURL=final_sass.css.map */

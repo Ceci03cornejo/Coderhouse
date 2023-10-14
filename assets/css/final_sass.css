@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.contenedor_general {
+  width: 100%;
+}
+
+:root {
+  --primary-color:#91805b;
+  --secondary-color:#ddb16e;
+  --terciary-color:#f8f7f2;
+  --color-dark:#4b4e49;
+  --color-dark2:#312d2c;
+  --text-banner:"Dancing Script", cursive;
+}
+
+/* CORRESPONDE A INDEX.HTML */
+/* barra de nav */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  justify-content: space-around;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--color-dark2);
+  padding: 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 5px;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a:hover {
+  background-color: var(--secondary-color);
+  /* border: 1px solid #999; */
+  color: #000;
+  box-shadow: 5px 5px 10px #999;
+}
+a:active {
+  box-shadow: none;
+  background-color: chocolate;
+  color: black;
+}
+
+.offcanvas-end {
+  top: 0;
+  left: 0;
+}
+
+img.img-fluid {
+  border-radius: 30px;
+}
+
+.h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+}
+
+#box_h1 {
+  margin: 40px 10px;
+}
+
+/* FIN BANNER */
+/* SECCION ARTICLE */
+/* }Corresponde a seccion Articulo, 3fotos y texto */
+article {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: none;
+}
+
+.article img {
+  width: 300px;
+  height: 350px;
+  margin: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.article p {
+  margin: 20px 0px;
+}
+
+article img:hover {
+  /* filter: sepia(60%); */
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+p.descripcion {
+  color: rgb(0, 2, 1);
+  text-decoration: none;
+  font-family: "Mooli", sans-serif;
+  margin: 30px;
+  font-size: large;
+}
+
+/* FIN SECCION ARTICLE */
+/* INICIO DE FOOTER */
+footer.grid-container {
+  width: auto;
+  height: auto;
+  background-color: var(--terciary-color);
+}
+
+#caja {
+  width: 100px;
+  height: 150px;
+}
+
+.foto_logo {
+  /* width: 50px; */
+  height: 150px;
+}
+
+/* fin de footer */
+/*  FIN PAGINA INDEX */
+/* PAGINA 2 - EVENTOS */
+.w-100 {
+  width: 80%;
+}
+
+.titulo_eventos {
+  margin: 60px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+
+.p_moli {
+  font-family: "Mooli", sans-serif;
+  text-align: center;
+  margin: 30px;
+  font-size: large;
+}
+
+.actuaciones_vivo {
+  margin-top: 40px;
+  margin: 30px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+}
+
+#medidasdiv {
+  width: auto;
+  /* height: 500px; */
+  /* justify-items: center; */
+}
+
+/* fin pagina eventos */
+/* INICIO PAGINA DE CLASES */
+.tabla1 {
+  text-align: center;
+}
+
+.table {
+  display: inline-block;
+  border-collapse: collapse;
+  border-spacing: 3px;
+  table-layout: fixed;
+  text-align: left;
+}
+
+.tr {
+  background-color: var(--secondary-color);
+  font-family: "Mooli", sans-serif;
+  text-align: justify;
+  margin: 30px;
+  font-size: medium;
+  border: 1px solid var(--color-dark);
+}
+
+.th {
+  font-family: "Mooli", sans-serif;
+}
+
+td {
+  border: 1px solid var(--color-dark);
+  font-family: "Mooli", sans-serif;
+  text-align: justify;
+  margin: 30px;
+  font-size: medium;
+}
+
+.p_moli2 {
+  font-family: "Mooli", sans-serif;
+  text-align: center;
+  margin: 30px;
+  font-size: medium;
+}
+
+/* Fin pagina clases */
+/* Inicio Pagina 5 Contacto */
+/* NAV */
+header {
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav_contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+#logo_contacto img {
+  width: 200px;
+  height: 200px;
+}
+
+#nav_contacto ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+#nav_contacto ul li {
+  list-style: none;
+}
+#nav_contacto a {
+  text-decoration: none;
+  color: var(--color-dark2);
+  padding: 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 5px;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*formulario CONTACTO*/
+.titulo_contacto {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 60px;
+}
+
+/* Formulario */
+form {
+  margin: 0 auto;
+  display: grid;
+  width: 500px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  margin-bottom: 70px;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+}
+
+input, textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+textarea:focus {
+  border-color: #000;
+}
+
+.button {
+  padding-left: 90px;
+}
+.button button {
+  margin-left: 9.5em;
+  text-decoration: none;
+  color: var(--color-dark2);
+  padding: 5px;
+  width: 70px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: white;
+  cursor: pointer;
+}
+.button button:hover {
+  background-color: #ddb16e;
+}
+
+/* Footer Contacto */
+#footer_contacto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--terciary-color);
+  justify-items: center;
+  gap: 1rem;
+}
+
+.footer_logo img {
+  width: 180px;
+  height: 180px;
+}
+
+.footer_redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer_redes p {
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container_redes {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 30px;
+}
+.container_redes a {
+  margin: 15px;
+  color: black;
+}
+.container_redes a i {
+  font-size: 20px;
+}
+.container_redes a:hover {
+  background-color: #91805b;
+}
+
+.footer_contactanos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer_contactanos a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 10px;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+/* WAVE footer */
+.wave_footer {
+  background-color: var(--terciary-color);
+}
+
+/* FIN PAGINA DE CONTACTO */
+/* INICIO PAGINA BAZAR */
+.bazar_contenedor {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+  background-color: none;
+}
+
+.imagen_bazar {
+  width: 300px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+  #nav_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-items: center;
+  }
+  #nav_contacto ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 50px 0px;
+  }
+  /* #nav_contacto ul li {
+  } */
+  form {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  input, textarea {
+    font: 1em sans-serif;
+    width: 160px;
+  }
+  #footer_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #video {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+/* Tablet Styles */
+/* Desktop Styles */
+
+/*# sourceMappingURL=final_sass.css.map */

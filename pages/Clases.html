@@ -1,58 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css>" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/final_sass.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tituo de pagina clases -->
+    <title>BellyDancer Carol</title>
 </head>
 <body>
-    <nav>
-        <a href="../Index.html">Inicio</a>
-        <a href="./Academia.html">Academia</a>
-        <a href="./Clases.html">Clases</a>
-        <a href="./Bazar.html">Bazar</a>
-        <a href="./Contacto.html">Contacto</a>
-    </nav>
-    <div class="div h1">
-        <h1>Clases</h1>
-    <div class="contenedor2">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates omnis saepe rerum ea quisquam ut perferendis labore itaque, dolore facere!
-        </p>
+    <header>
+        <nav id="nav_contacto">
+            <div id="logo_contacto">
+              <img src="../assets/images/LOGO PNG 1.png" alt="imagen_logo">
+            </div>
+            <ul>
+              <li><a href="../Index.html">Inicio</a></li>
+              <li><a href="./Eventos.html">Eventos</a></li>
+              <li><a href="./Clases.html">Clases</a></li>
+              <li><a href="./Bazar.html">Bazar</a></li>
+              <li><a href="./Contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <section id="container_contacto">
+        <div class="titulo_contacto">
+            <h1>Clases</h1>
+        </div>
+        <div class="p_moli">
+            <p>
+                ¡A continuación el detalle de los días, horarios y ubicación de las clases para todos ustedes!
+            </p>
+        </div>
+<!--  seccion contenedora de tabla de horarios -->
+    <section>  
+    <div class="tabla1">
+        <table class="table">
+            <tr class="tr">
+                <th>Dia</th>
+                <th>Horario</th>
+                <th>Direccion</th>
+            </tr>
+            <tr>
+                <td>Lunes</td>
+                <td>18:00 pm</td>
+                <td>Barrio Itlia, providencia</td>
+            </tr>
+            <tr>
+                <td>Miercoles</td>
+                <td>17:00 pm</td>
+                <td>Salvador, providencia</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>15:00 pm</td>
+                <td>Metro Manuel Montt</td>
+        </table> 
     </div>
-<div>
-    <table class="table">
-        <tr class="tr">
-          <th>Dia</th>
-          <th>Horario</th>
-          <th>Direccion</th>
-        </tr>
-        <tr>
-          <td>Lunes</td>
-          <td>18:00 pm</td>
-          <td>Barrio Itlia, providencia</td>
-        </tr>
-        <tr>
-          <td>Miercoles</td>
-          <td>17:00 pm</td>
-          <td>Salvador, providencia</td>
-        </tr>
-        <tr>
-          <td>Viernes</td>
-          <td>15:00 pm</td>
-          <td>Metro Manuel Montt</td>
-    </table>
-</div>
-<div>
-    <div class="footer p">
-        <a href="./pages/Contacto.html">
-        <p>Contacto</p>
-        </a>
-        <p>Redes Sociales</p>
+    <section>
+        <div class="p_moli2">
+                <p>
+                    ¡Contáctame para mas información!!!!
+                </p>
+        </div>
+    </section>
+   <article id="video">
+    <div>
+        <video width="300" height="600" controls>
+            <source src="../assets/Video/Video_tiktok.mp4" type="video/tiktok">
+            <source src="../assets/Video/Video_tiktok.mp4" type="video/webm">
+            </video>
     </div>
+    </article>
+    </section>
+    
+
+    <!-- Inicio Footer -->
+
+            <footer>
+                <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                        style="height: 100%; width: 100%;" class="wave_footer">
+                        <path d="M-0.00,49.85 C150.00,149.60 271.37,-49.85 500.00,49.85 L500.00,0.00 L-0.00,0.00 Z"
+                            style="stroke: none; fill: rgb(255, 255, 255);"></path>
+                    </svg>
+                </div>
+
+                <div id="footer_contacto">
+                    <div class="footer_logo">
+                        <img src="../assets/images/LOGO PNG 1.png" alt="imagen_logo">
+                    </div>
+                    <div class="footer_redes">
+                        <p>Sigueme en Redes Sociales</p>
+                        <div class="container_redes">
+                            <a href="https://www.tiktok.com/@bellydancercarol?_t=8gQsykqkpfy&_r=1" target="_blank"><i
+                                    class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/bellydancercarol/?igshid=NzZhOTFlYzFmZQ%3D%3D"
+                                target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="tel:+56932636568"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer_contactanos">
+                        <a href="./Contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </footer>
+              <!-- fin footer -->
+        </main>
+    </header>
+
+        
+
+            <!-- fin integracion para responsive de boostrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+</body>
 </div>
 </div>
 </body>
+
 </html>

@@ -1,8 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-  
-  @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 
 
 body {
@@ -32,7 +30,6 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  /* background-color: hwb(30 98% 1%); */
 }
 
 .logo {
@@ -50,7 +47,6 @@ header {
   border-radius: 10px;
   margin: 5px;
   font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
 }
 
 a:hover {
@@ -65,23 +61,24 @@ a:active {
   background-color: chocolate;
   color: black;
 }
+
 .offcanvas-end {
   top: 0;
   left: 0;
-  /* width: var(--#{$prefix}offcanvas-width);
-  border-left: var(--#{$prefix}offcanvas-border-width) solid var(--#{$prefix}offcanvas-border-color);
-  transform: translateX(100%); */
-}
-img.img-fluid {
-  border-radius: 30px;
-  /* border-top-left-radius: 100px; */
-}
-.h1 {
-  margin: 50px;
-  font-family:'Dancing Script', cursive;
-  font-weight:700;
+
 }
 
+img.img-fluid {
+  border-radius: 30px;
+}
+
+.h1 {
+   font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+#box_h1{
+  margin: 40px 10px;
+}
 /* FIN BANNER */
 
 /* SECCION ARTICLE */
@@ -95,7 +92,6 @@ article {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-items: stretch; */
   background-color: none;
 }
 
@@ -104,14 +100,21 @@ article {
   height: 350px;
   margin: 30px;
   border-radius: 30px;
-  
 }
-article img:hover {filter: sepia(60%);}
+
+.article p {
+  margin: 20px 0px;
+}
+
+
+article img:hover {
+  filter: sepia(60%);
+}
 
 p.descripcion {
   color: rgb(0, 2, 1);
   text-decoration: none;
- font-family: 'Mooli', sans-serif;
+  font-family: 'Mooli', sans-serif;
   margin: 30px;
   font-size: large;
 }
@@ -124,10 +127,11 @@ footer.grid-container {
   width: auto;
   height: auto;
   background-color: var(--terciary-color);
-  
- 
+
+
 }
-#caja{
+
+#caja {
   width: 100px;
   height: 150px;
 }
@@ -137,21 +141,21 @@ footer.grid-container {
   height: 150px;
 }
 
-
 /* fin de footer */
 /*  FIN PAGINA INDEX */
+
 
 
 /* PAGINA 2 - EVENTOS */
 
 
-.titulo_eventos{
+.titulo_eventos {
   margin: 60px;
-  font-family:'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
   text-align: center;
 }
 
-.p_moli{
+.p_moli {
   font-family: 'Mooli', sans-serif;
   text-align: justify;
   margin: 30px;
@@ -162,45 +166,91 @@ footer.grid-container {
 .actuaciones_vivo {
   margin-top: 40px;
   margin: 30px;
-  font-family:'Dancing Script', cursive;
-  font-weight:700;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
 }
 
 #medidasdiv {
-width: 500px;
-/* height: 500px; */
-align-items: left;
+  width: 500px;
+  /* height: 500px; */
+  align-items: left;
 }
 
 /* fin pagina eventos */
 
+/* INICIO PAGINA DE CLASES */
 
-/* Inicio Pagina Contacto */
+.tabla1 {
+  text-align: center;
+}
+
+.table {
+  display: inline-block;
+  border-collapse: collapse;
+  border-spacing: 3px;
+  table-layout: fixed;
+  text-align: left;
+}
+
+.tr {
+  background-color: var(--secondary-color);
+  font-family: 'Mooli', sans-serif;
+  text-align: justify;
+  margin: 30px;
+  font-size: medium;
+}
+
+.th {
+  font-family: 'Mooli', sans-serif;
+}
+
+.td {
+  border: 1px solid var(--color-dark);
+  font-family: 'Mooli', sans-serif;
+  text-align: justify;
+  margin: 30px;
+  font-size: medium;
+}
+
+.p_moli2 {
+  font-family: 'Mooli', sans-serif;
+  text-align: justify;
+  margin: 30px;
+  font-size: medium;
+}
+/* Fin pagina clases */
+
+/* Inicio Pagina 5 Contacto */
 
 /* NAV */
-header{
+header {
   margin: 0px;
   padding: 0px;
 }
-#nav_contacto{
+
+#nav_contacto {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 
 }
-#logo_contacto img{
+
+#logo_contacto img {
   width: 200px;
   height: 200px;
 }
-#nav_contacto ul{
+
+#nav_contacto ul {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
 }
-#nav_contacto ul li{
+
+#nav_contacto ul li {
   list-style: none;
 }
-#nav_contacto a{
+
+#nav_contacto a {
   text-decoration: none;
   color: var(--color-dark2);
   padding: 15px;
@@ -209,12 +259,14 @@ header{
   margin: 5px;
   font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-/* TITULO contacto */
-.titulo_contacto{
+
+/*formulario CONTACTO*/
+
+.titulo_contacto {
   font-family: 'Dancing Script', cursive;
   text-align: center;
   font-size: 1.5rem;
-  font-weight:700;
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 60px;
 }
@@ -229,6 +281,7 @@ form {
   border-radius: 1em;
   margin-bottom: 70px;
   font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 }
 
 ul {
@@ -281,52 +334,71 @@ textarea {
   background-color: white;
   cursor: pointer;
 }
-.button button:hover{
+
+.button button:hover {
   background-color: #ddb16e;
 }
 
 /* Footer Contacto */
-#footer_contacto{
+
+#footer_contacto {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   background-color: var(--terciary-color);
   justify-items: center;
+  gap: 1rem;
+
+  .box-5{
+  grid-area: box5;
+  background-color: lightgray; 
+  }
+  
+
 }
-.footer_logo img{
+
+.footer_logo img {
   width: 150px;
   height: 150px;
 }
-.footer_redes{
+
+.footer_redes {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.footer_redes p{
+
+.footer_redes p {
   font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.container_redes{
+
+.container_redes {
   display: flex;
   width: 100%;
   justify-content: center;
   height: 30px;
 }
-.container_redes a{
+
+.container_redes a {
   margin: 15px;
   color: black;
 }
-.container_redes a i{
+
+.container_redes a i {
   font-size: 20px;
 }
-.container_redes a:hover{
+
+.container_redes a:hover {
   background-color: #91805b;
 }
-.footer_contactanos{
+
+.footer_contactanos {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-.footer_contactanos a{
+
+.footer_contactanos a {
   display: block;
   text-decoration: none;
   color: black;
@@ -337,53 +409,17 @@ textarea {
 }
 
 /* WAVE footer */
-.wave_footer{
+.wave_footer {
   background-color: var(--terciary-color);
 }
+
 /* FIN PAGINA DE CONTACTO */
 
-/* INICIO PAGINA DE CLASES */
 
-.tabla1{
-  text-align: center;
-}
-.table {
-  display: inline-block;
-  border-collapse: collapse;
-  border-spacing: 3px;
-  table-layout: fixed;
-  text-align: left;
-  /* margin-left: 30px; */
-  border-radius: 10px;
-}
-
-.tr {
-  background-color: var(--secondary-color);
-  font-family: 'Mooli', sans-serif;
-  text-align: justify;
-  margin: 30px;
-  font-size:medium;
-}
-
-th,
-td {
-  border: 1px solid var(--color-dark);
-  font-family: 'Mooli', sans-serif;
-  text-align: justify;
-  margin: 30px;
-  font-size:medium;
-}
-
-.p_moli2{
-  font-family: 'Mooli', sans-serif;
-  text-align: justify;
-  margin: 30px;
-  font-size:medium;
-}
 
 /* INICIO PAGINA BAZAR */
 
-.bazar_contenedor{
+.bazar_contenedor {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -392,7 +428,44 @@ td {
   background-color: none;
 }
 
-.imagen_bazar{
+.imagen_bazar {
   width: 300px;
-    
+
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  #nav_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-items: center;
+  }
+  #nav_contacto ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    gap: 50px 0px;
+  }
+  #nav_contacto ul li {
+  }
+  
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E;
+    /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF;
+    /* Blue */
+  }
 }

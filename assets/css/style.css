@@ -162,7 +162,7 @@ footer.grid-container {
 
 .p_moli {
   font-family: 'Mooli', sans-serif;
-  text-align: justify;
+  text-align: center;
   margin: 30px;
   font-size: large;
 }
@@ -221,7 +221,7 @@ td {
 
 .p_moli2 {
   font-family: 'Mooli', sans-serif;
-  text-align: justify;
+  text-align: center;
   margin: 30px;
   font-size: medium;
 }

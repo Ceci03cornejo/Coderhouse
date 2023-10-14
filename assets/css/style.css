@@ -99,6 +99,7 @@ article {
   height: 350px;
   margin: 30px;
   border-radius: 30px;
+  overflow:hidden;
 }
 
 .article p {
@@ -107,8 +108,10 @@ article {
 
 
 article img:hover {
-  filter: sepia(60%);
+  /* filter: sepia(60%); */
+  -webkit-transform:scale(1.1);transform:scale(1.1);
 }
+
 
 p.descripcion {
   color: rgb(0, 2, 1);
@@ -173,9 +176,9 @@ footer.grid-container {
 }
 
 #medidasdiv {
-  width: 500px;
+  width: auto;
   /* height: 500px; */
-  align-items: left;
+  /* justify-items: center; */
 }
 
 /* fin pagina eventos */
@@ -453,8 +456,8 @@ textarea {
     justify-items: center;
     gap: 50px 0px;
   }
-  #nav_contacto ul li {
-  }
+  /* #nav_contacto ul li {
+  } */
 
   form {
     width: 90%;

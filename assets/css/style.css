@@ -220,6 +220,7 @@ footer.grid-container {
 }
 /* Fin pagina clases */
 
+
 /* Inicio Pagina 5 Contacto */
 
 /* NAV */
@@ -275,12 +276,14 @@ header {
 
 form {
   margin: 0 auto;
+  display: grid;
   width: 500px;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 1em;
   margin-bottom: 70px;
   font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 
 }
 
@@ -348,17 +351,11 @@ textarea {
   justify-items: center;
   gap: 1rem;
 
-  .box-5{
-  grid-area: box5;
-  background-color: lightgray; 
-  }
-  
-
 }
 
 .footer_logo img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
 }
 
 .footer_redes {
@@ -403,9 +400,9 @@ textarea {
   text-decoration: none;
   color: black;
   font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
-  margin: 5px;
+  margin: 3px;
 }
 
 /* WAVE footer */
@@ -430,14 +427,17 @@ textarea {
 
 .imagen_bazar {
   width: 300px;
-
+  margin: 10px;
+  border-radius: 10px;
+ 
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
+  
   #nav_contacto {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
     width: 100%;
     margin-bottom: 40px;
     justify-items: center;
@@ -451,7 +451,23 @@ textarea {
   }
   #nav_contacto ul li {
   }
+
+  form {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  input,
+  textarea {
+  font: 1em sans-serif;
+  width: 150px;
+  }
   
+  #footer_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+ 
+}
 }
 
 /* Tablet Styles */

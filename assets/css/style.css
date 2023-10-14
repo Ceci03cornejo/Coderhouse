@@ -147,6 +147,9 @@ footer.grid-container {
 
 /* PAGINA 2 - EVENTOS */
 
+.w-100 {
+  width: 80%;
+}
 
 .titulo_eventos {
   margin: 60px;

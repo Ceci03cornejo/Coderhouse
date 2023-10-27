@@ -62,6 +62,21 @@ a {
     color: black;
   }
 }
+header #nav_contacto #img_logo {
+  padding: 0px;
+  border: none;
+  border-radius: 0px;
+  margin: 0px;
+}
+header #nav_contacto #img_logo:hover {
+ background-color: transparent;
+ box-shadow: none;
+}
+#img_logo a:hover {
+  background-color: transparent;
+  box-shadow: none;
+ }
+
 
 .offcanvas-end {
   top: 0;
@@ -83,6 +98,24 @@ img.img-fluid {
 
 /* FIN BANNER */
 
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+
 /* SECCION ARTICLE */
 
 /* }Corresponde a seccion Articulo, 3fotos y texto */
@@ -103,17 +136,17 @@ article {
     margin: 30px;
     border-radius: 30px;
     overflow: hidden;
+    transition: all 0.3;
   }
 
   p {
-    margin: 20px 0px;
+    margin: 50px 0px;
   }
 }
 
 article img:hover {
-  /* filter: sepia(60%); */
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 p.descripcion {
@@ -145,6 +178,7 @@ footer.grid-container {
 }
 
 /* fin de footer */
+
 /*  FIN PAGINA INDEX */
 
 /* PAGINA 2 - EVENTOS */
@@ -162,7 +196,7 @@ footer.grid-container {
 .p_moli {
   font-family: 'Mooli', sans-serif;
   text-align: center;
-  margin: 30px;
+  margin: 50px;
   font-size: large;
 }
 
@@ -436,21 +470,33 @@ textarea {
   border-radius: 10px;
 }
 
+.imagen_bazar:hover {
+  filter: opacity(.5);
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
   #nav_contacto {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     width: 100%;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     justify-items: center;
 
     ul {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      justify-items: center;
-      gap: 50px 0px;
+      // grid-template-rows: 1fr 1fr;
+      width: 60%;
+      justify-content: center;
+      height: 145px;
+      margin: 0 auto;
+      // gap: 50px 0px;
+
+    }
+    ul li{
+      height: 53.2px;
     }
   }
 

@@ -84,6 +84,7 @@ img.img-fluid {
 .h1 {
   font-family: "Dancing Script", cursive;
   font-weight: 700;
+  text-align: center;
 }
 
 #box_h1 {
